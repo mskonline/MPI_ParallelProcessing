@@ -1,0 +1,42 @@
+#################################################
+
+MPI and TACC Stampede Manual
+
+
+#################################################
+
+Contents:
+
+	1. Installing MPI
+	2. Running MPI program
+	3. Running programs on Stampede
+	4. Misc. commands on Stampede
+
+******************************************
+1. Installing MPI
+
+
+******************************************
+2. Running MPI program
+
+	mpicc <your program>
+	mpirun -np <num of procs> a.out
+
+******************************************
+3.Running Programs on Stampede
+	
+	ssh <username>@stampede.tacc.utexas.edu
+	<enter your password>
+	idev /* this is development mode */
+	mpicc <your program>
+	ibrun -np <num of procs> a.out
+	
+Note: After all your testing, exit idev immediately 
+otherwise you will exhaust your quota
+
+******************************************
+4. Misc commands on Stampede
+
+
+
+******************************************
